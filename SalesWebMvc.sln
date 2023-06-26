@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33424.131
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalesWebMvc", "SalesWebMvc\SalesWebMvc.csproj", "{A1167A2F-8642-4B1E-88A0-18E490164218}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SalesWebMvc", "SalesWebMvc\SalesWebMvc.csproj", "{A1167A2F-8642-4B1E-88A0-18E490164218}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalesWebMvc.Infra.Data", "SalesWebMvc.Infra.Data\SalesWebMvc.Infra.Data.csproj", "{EE608266-B40D-4848-B46D-DBAB61B24DEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalesWebMvc.Dominio", "SalesWebMvc.Dominio\SalesWebMvc.Dominio.csproj", "{B0AF211A-C6F0-46B2-A8AA-9BCDD9C6BADE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{A1167A2F-8642-4B1E-88A0-18E490164218}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1167A2F-8642-4B1E-88A0-18E490164218}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1167A2F-8642-4B1E-88A0-18E490164218}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE608266-B40D-4848-B46D-DBAB61B24DEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE608266-B40D-4848-B46D-DBAB61B24DEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE608266-B40D-4848-B46D-DBAB61B24DEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE608266-B40D-4848-B46D-DBAB61B24DEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0AF211A-C6F0-46B2-A8AA-9BCDD9C6BADE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0AF211A-C6F0-46B2-A8AA-9BCDD9C6BADE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0AF211A-C6F0-46B2-A8AA-9BCDD9C6BADE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0AF211A-C6F0-46B2-A8AA-9BCDD9C6BADE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,4 +1,21 @@
+using Microsoft.EntityFrameworkCore;
+
+using SalesWebMvc.Infra.Data.Context;
+
+using System.Text;
+
 var builder = WebApplication.CreateBuilder(args);
+
+
+
+void ConfigureServices(IServiceCollection services)
+{
+    Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
+    services.AddDbContext<SalesWebMvcContext>(options => options.UseMySQL(builder.Configuration.GetConnectionString("Sales")), ServiceLifetime.Scoped);
+
+
+
+}
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
