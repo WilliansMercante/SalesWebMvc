@@ -7,28 +7,30 @@
         public string Email { get; set; }
         public DateTime DtNascimento { get; set; }
         public double Salario { get; set; }
+        public int IdDepartamento { get; set; }
         public DepartamentoEntity Departamento { get; set; }
-        public ICollection<HistoricoVendas> HistoricoVendas { get; set; } = new List<HistoricoVendas>();
+        public ICollection<HistoricoVendasEntity> HistoricoVendas { get; set; } = new List<HistoricoVendasEntity>();
 
         public VendedorEntity()
         {
         }
 
-        public VendedorEntity(int id, string nome, string email, DateTime dtNascimento, double salario)
+        public VendedorEntity(int id, string nome, string email, DateTime dtNascimento, double salario, int idDepartamento)
         {
             Id = id;
             Nome = nome;
             Email = email;
             DtNascimento = dtNascimento;
             Salario = salario;
+            IdDepartamento = idDepartamento;
         }
 
-        public void AdicionarVendas(HistoricoVendas historico)
+        public void AdicionarVendas(HistoricoVendasEntity historico)
         {
             HistoricoVendas.Add(historico);
         }
 
-        public void RemoverVendas(HistoricoVendas historico)
+        public void RemoverVendas(HistoricoVendasEntity historico)
         {
             HistoricoVendas.Remove(historico);
         }

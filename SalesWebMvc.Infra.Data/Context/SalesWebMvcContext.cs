@@ -14,11 +14,15 @@ namespace SalesWebMvc.Infra.Data.Context
         }
 
         public DbSet<VendedorEntity> Vendedor { get; set; }
+        public DbSet<DepartamentoEntity> Departamento { get; set; }
+        public DbSet<HistoricoVendasEntity> HistoricoVendas { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new VendedorMapping());
+            modelBuilder.ApplyConfiguration(new DepartamentoMapping());
+            modelBuilder.ApplyConfiguration(new HistoricoVendasMapping());
             base.OnModelCreating(modelBuilder);
         }
 

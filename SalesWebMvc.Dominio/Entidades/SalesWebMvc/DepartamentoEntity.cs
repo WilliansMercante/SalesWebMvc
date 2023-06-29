@@ -1,9 +1,9 @@
 ﻿namespace SalesWebMvc.Dominio.Entidades.SalesWebMvc
 {
-    public class DepartamentoEntity
+    public class DepartamentoEntity : Entidade
     {
-        public int Id { get; set; }
         public string Nome { get; set; }
+        public bool FlAtivo { get; set; }
         public ICollection<VendedorEntity> Vendedores { get; set; } = new List<VendedorEntity>();
 
         public DepartamentoEntity()

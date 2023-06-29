@@ -15,7 +15,8 @@ namespace SalesWebMvc.Infra.Data.Mappings.SalesWebMvc
 
             builder.Property(p => p.Id).HasColumnName("ID_HISTORICO_VENDA");
             builder.Property(p => p.DtVenda).HasColumnName("DT_VENDA");
-
+            builder.Property(p=>p.Status).HasColumnType("int").HasColumnName("STATUS");
+            builder.Property(p=>p.IdVendedor).HasColumnName("ID_VENDEDOR");
 
         }
     }
