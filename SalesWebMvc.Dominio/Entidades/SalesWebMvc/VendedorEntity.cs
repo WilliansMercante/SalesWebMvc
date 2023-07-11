@@ -1,14 +1,14 @@
 ﻿namespace SalesWebMvc.Dominio.Entidades.SalesWebMvc
 {
-    public class VendedorEntity
+    public class VendedorEntity : Entidade
     {
-        public int Id { get; set; }
         public string Nome { get; set; }
         public string Email { get; set; }
         public DateTime DtNascimento { get; set; }
         public double Salario { get; set; }
         public int IdDepartamento { get; set; }
         public DepartamentoEntity Departamento { get; set; }
+        public bool FlAtivo { get; set; }
         public ICollection<HistoricoVendasEntity> HistoricoVendas { get; set; } = new List<HistoricoVendasEntity>();
 
         public VendedorEntity()

@@ -14,6 +14,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\SalesWebMvc.Infra.Data\SalesWebMvc.Infra.Data.csproj" />
+    <ProjectReference Include="..\SalesWebMvc.Ioc\SalesWebMvc.Ioc.csproj" />
   </ItemGroup>
 
 </Project>

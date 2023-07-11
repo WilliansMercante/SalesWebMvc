@@ -2,9 +2,8 @@
 
 namespace SalesWebMvc.Dominio.Entidades.SalesWebMvc
 {
-    public class HistoricoVendasEntity
+    public class HistoricoVendasEntity : Entidade
     {
-        public int Id { get; set; }
         public DateTime DtVenda { get; set; }
         public double Valor { get; set; }
         public int IdVendedor { get; set; }

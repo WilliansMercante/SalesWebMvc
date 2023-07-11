@@ -6,7 +6,7 @@ namespace SalesWebMvc.Dominio.Interfaces.SalesWebMvc
     {
         IEnumerable<VendedorEntity> Listar();
         void Incluir(VendedorEntity obj);
-        VendedorEntity Obter(int id);
+        VendedorEntity ConsultarPorId(int id);
         void Inativar(int id);
     }
 }

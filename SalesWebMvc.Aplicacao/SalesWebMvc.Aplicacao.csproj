@@ -6,4 +6,14 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SalesWebMvc.Dominio\SalesWebMvc.Dominio.csproj" />
+    <ProjectReference Include="..\SalesWebMvc.Infra.Data\SalesWebMvc.Infra.Data.csproj" />
+    <ProjectReference Include="..\SalesWebMvc.ViewsModels\SalesWebMvc.ViewModels.csproj" />
+  </ItemGroup>
+
 </Project>

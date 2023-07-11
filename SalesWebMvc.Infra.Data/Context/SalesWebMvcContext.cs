@@ -22,7 +22,7 @@ namespace SalesWebMvc.Infra.Data.Context
         {
             modelBuilder.ApplyConfiguration(new VendedorMapping());
             modelBuilder.ApplyConfiguration(new DepartamentoMapping());
-            modelBuilder.ApplyConfiguration(new HistoricoVendasMapping());
+            modelBuilder.ApplyConfiguration(new HistoricoVendaMapping());
             base.OnModelCreating(modelBuilder);
         }
 

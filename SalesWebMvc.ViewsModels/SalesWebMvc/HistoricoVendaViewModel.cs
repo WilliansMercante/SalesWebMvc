@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SalesWebMvc.ViewModels.SalesWebMvc
 {
-    public class HistoricoVendasViewModel
+    public class HistoricoVendaViewModel
     {
     }
 }

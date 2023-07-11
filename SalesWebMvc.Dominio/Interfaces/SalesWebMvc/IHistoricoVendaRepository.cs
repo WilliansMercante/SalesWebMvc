@@ -2,10 +2,10 @@
 
 namespace SalesWebMvc.Dominio.Interfaces.SalesWebMvc
 {
-    public interface IHistoricoVendasRepository
+    public interface IHistoricoVendaRepository
     {
         IEnumerable<HistoricoVendasEntity> Listar();
         void Incluir(HistoricoVendasEntity obj);
-        HistoricoVendasEntity Obter(int id);
+        HistoricoVendasEntity ConsultarPorId(int id);
     }
 }

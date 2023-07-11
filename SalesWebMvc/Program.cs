@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 
 using SalesWebMvc.Infra.Data.Context;
+using SalesWebMvc.Ioc;
 
 using System.Text;
 
@@ -12,6 +13,7 @@ void ConfigureServices(IServiceCollection services)
 {
     Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
     services.AddDbContext<SalesWebMvcContext>(options => options.UseMySQL(builder.Configuration.GetConnectionString("Sales")), ServiceLifetime.Scoped);
+    InjectionDependencyCore.ConfigureServices(services);
 
 
 

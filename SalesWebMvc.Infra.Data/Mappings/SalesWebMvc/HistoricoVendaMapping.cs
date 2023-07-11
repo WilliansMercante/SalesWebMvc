@@ -5,7 +5,7 @@ using SalesWebMvc.Dominio.Entidades.SalesWebMvc;
 
 namespace SalesWebMvc.Infra.Data.Mappings.SalesWebMvc
 {
-    internal sealed class HistoricoVendasMapping : IEntityTypeConfiguration<HistoricoVendasEntity>
+    internal sealed class HistoricoVendaMapping : IEntityTypeConfiguration<HistoricoVendasEntity>
     {
         public void Configure(EntityTypeBuilder<HistoricoVendasEntity> builder)
         {
