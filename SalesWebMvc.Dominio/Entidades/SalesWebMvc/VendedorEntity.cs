@@ -9,7 +9,7 @@
         public int IdDepartamento { get; set; }
         public DepartamentoEntity Departamento { get; set; }
         public bool FlAtivo { get; set; }
-        public ICollection<HistoricoVendasEntity> HistoricoVendas { get; set; } = new List<HistoricoVendasEntity>();
+        public ICollection<HistoricoVendaEntity> HistoricoVendas { get; set; } = new List<HistoricoVendaEntity>();
 
         public VendedorEntity()
         {
@@ -25,12 +25,12 @@
             IdDepartamento = idDepartamento;
         }
 
-        public void AdicionarVendas(HistoricoVendasEntity historico)
+        public void AdicionarVendas(HistoricoVendaEntity historico)
         {
             HistoricoVendas.Add(historico);
         }
 
-        public void RemoverVendas(HistoricoVendasEntity historico)
+        public void RemoverVendas(HistoricoVendaEntity historico)
         {
             HistoricoVendas.Remove(historico);
         }

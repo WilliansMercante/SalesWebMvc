@@ -15,7 +15,7 @@ namespace SalesWebMvc.Infra.Data.Context
 
         public DbSet<VendedorEntity> Vendedor { get; set; }
         public DbSet<DepartamentoEntity> Departamento { get; set; }
-        public DbSet<HistoricoVendasEntity> HistoricoVendas { get; set; }
+        public DbSet<HistoricoVendaEntity> HistoricoVendas { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

@@ -5,9 +5,9 @@ using SalesWebMvc.Dominio.Entidades.SalesWebMvc;
 
 namespace SalesWebMvc.Infra.Data.Mappings.SalesWebMvc
 {
-    internal sealed class HistoricoVendaMapping : IEntityTypeConfiguration<HistoricoVendasEntity>
+    internal sealed class HistoricoVendaMapping : IEntityTypeConfiguration<HistoricoVendaEntity>
     {
-        public void Configure(EntityTypeBuilder<HistoricoVendasEntity> builder)
+        public void Configure(EntityTypeBuilder<HistoricoVendaEntity> builder)
         {
             builder.ToTable("TB_HISTORICO_VENDA");
 

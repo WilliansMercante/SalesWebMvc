@@ -22,7 +22,7 @@ namespace SalesWebMvc.Aplicacao.SalesWebMvc
             _vendedorRepository = vendedorRepository;
         }
 
-        public void AdicionarVendedor(VendedorViewModel vendedor)
+        public void Incluir(VendedorViewModel vendedor)
         {
             var vendedorEntity = _mapper.Map<VendedorEntity>(vendedor);
             _vendedorRepository.Incluir(vendedorEntity);

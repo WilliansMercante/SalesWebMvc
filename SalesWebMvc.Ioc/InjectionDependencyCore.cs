@@ -13,27 +13,18 @@ namespace SalesWebMvc.Ioc
             AddApplication(services);
         }
 
-
         private static void AddApplication(IServiceCollection services)
         {
-
-
             services.AddScoped<IVendedorApp, VendedorApp>();
-
-
-
-
+            services.AddScoped<IHistoricoVendaApp, HistoricoVendaApp>();
+            services.AddScoped<IDepartamentoApp, DepartamentoApp>();
         }
+
         private static void AddRepositories(IServiceCollection services)
         {
-
-
-
-
-  
-
-
-
+            services.AddScoped<IVendedorApp, VendedorApp>();
+            services.AddScoped<IHistoricoVendaApp, HistoricoVendaApp>();
+            services.AddScoped<IDepartamentoApp, DepartamentoApp>();
         }
     }
 }

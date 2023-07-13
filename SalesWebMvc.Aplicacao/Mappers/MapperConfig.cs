@@ -21,7 +21,7 @@ namespace SalesWebMvc.Aplicacao.Mappers
         {
             cfg.CreateMap<VendedorEntity, VendedorViewModel>().ReverseMap();
             cfg.CreateMap<DepartamentoEntity, DepartamentoViewModel>().ReverseMap();
-            cfg.CreateMap<HistoricoVendasEntity, HistoricoVendaViewModel>().ReverseMap();
+            cfg.CreateMap<HistoricoVendaEntity, HistoricoVendaViewModel>().ReverseMap();
         }
     }
 }
